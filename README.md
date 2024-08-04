@@ -15,15 +15,16 @@
   - **Webpack**: Used for bundling and optimizing project assets and dependencies for efficient loading and performance.
 
 3. **Useful Links:**
-- [DEMO LINK](https://github.com/wasik07/js_2048_game/)
-    Play a live version of the 2048 game to see its implementation in action.
+  - [DEMO LINK](https://github.com/wasik07/js_2048_game/)
+      Play a live version of the 2048 game to see its implementation in action.
 
-- [ORIGINAL GAME LINK](https://play2048.co/)
-    The project is inspired by the popular 2048 game available at this link.
+  - [ORIGINAL GAME LINK](https://play2048.co/)
+      The project is inspired by the popular 2048 game available at this link.
 
 4. **Any additional launch instructions:**
 
-To run this project locally, follow these steps:
+  To run this project locally, follow these steps:
+
     1. Clone the repository:
       git clone https://github.com/wasik07/js_2048_game.git
     2. Navigate to the project directory:
@@ -35,6 +36,6 @@ To run this project locally, follow these steps:
     5. Open your browser and go to:
       http://localhost:3000 to view and interact with the 2048 game.
 
-This will launch the 2048 game on your local development server, allowing you to explore and test the project's features.
+  This will launch the 2048 game on your local development server, allowing you to explore and test the project's features.
 
-![Preview](./src/images/reference.png)
+  ![Preview](./src/images/reference.png)
