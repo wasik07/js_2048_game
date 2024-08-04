@@ -15,7 +15,7 @@
   - **Webpack**: Used for bundling and optimizing project assets and dependencies for efficient loading and performance.
 
 3. **Useful Links:**
-  - [DEMO LINK](https://github.com/wasik07/js_2048_game/)
+  - [DEMO LINK](https://wasik07.github.io/js_2048_game/)
       Play a live version of the 2048 game to see its implementation in action.
 
   - [ORIGINAL GAME LINK](https://play2048.co/)
