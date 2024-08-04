@@ -1,69 +1,41 @@
-# 2048 game
+# **2048 Game**
 
-Hey! Are you ready for a real hard check of your JavaScript skills, ninja?
-If you are still here, let's do it.
+1. **A brief description of the project:**
 
-In this task, you need to implement the 2048 game like in [this reference](https://play2048.co/)
-Don't play for too long! We need you to write the code!
+  This project is a web-based implementation of the classic game 2048. It features a responsive and interactive design, allowing players to enjoy the game on both desktop and mobile devices. The game consists of a 4x4 grid where players combine tiles with the same value to achieve higher numbers, aiming to reach the 2048 tile. The project showcases a clean and intuitive user interface with a modern aesthetic, utilizing a tabular layout for the game board and clear, interactive controls. The design adheres to best practices in web development, ensuring a smooth and engaging user experience.
 
-Okay, what do we have?
-1) HTML and CSS are already written. You can use it, or implement your own design if you want.
-2) Base `Game` class structure is already written too. Extend it with your own methods. Obligatory methods (used in tests):
-  - constructor with `initialState` parameter (value is optional, defaults to the empty board)
-  - `getState()`
-  - `getScore()`
-  - `getStatus()`
-  - `moveLeft()`
-  - `moveRight()`
-  - `moveUp()`
-  - `moveDown()`
-  - `start()`
-  - `restart()`
+2. **Technologies that were used:**
 
-3) Reference.
+  - **JavaScript**: Implemented for game logic and interactivity, including handling user input and updating the game state.
+  - **HTML5**: Utilized for the structure and semantic organization of the webpage.
+  - **CSS3**: Employed for styling, layout, and visual design, leveraging Flexbox and Grid for responsive and adaptive layouts.
+  - **Sass**: Adopted for managing stylesheets, enhancing maintainability and scalability through variables, nesting, and mixins.
+  - **BEM (Block Element Modifier)**: Applied for a clear and consistent CSS architecture, facilitating modular and reusable code.
+  - **Responsive Design Techniques**: Implemented to ensure the webpage adapts seamlessly to various screen sizes and devices.
+  - **Webpack**: Used for bundling and optimizing project assets and dependencies for efficient loading and performance.
 
-That's it!
+3. **Useful Links:**
+- [DEMO LINK](https://github.com/wasik07/js_2048_game/)
+    Play a live version of the 2048 game to see its implementation in action.
 
-Okay, okay. Also, we have some rules:
-1) The game field is 4 x 4
-2) Each cell can be empty or contain one of the numbers: 2, 4, 8 ... 2^n
-3) The player can move cells with keyboard arrows
-4) All the numbers should be moved in the selected direction until all empty cells are filled in
-   - 2 equal cells should be merged into a doubled number
-   - The merged cell can’t be merged twice during one move
-5) The move is possible if at least one cell is changed after the move
-6) After move 2 or 4 appears in a random empty cell. 4 probability is 10%
-7) When 2048 value is displayed in any cell, win message should be shown.
-8) The `game over` message should be shown if there are no more available moves.
-9) Hide start message when game starts.
-10) Change the `Start` button to `Restart` after the first move.
-11) `Restart` button should reset the game to the initial state.
-12) Increase score with each move. The score should be increased by the sum of all merged cells.
-13) The game consists of 2 main parts:
-  - game logic written in `src/modules/Game.class.js` module that exports `Game` class
-  - game UI written in `src/index.html` with `main.js` script that need to use `Game` class instance
+- [ORIGINAL GAME LINK](https://play2048.co/)
+    The project is inspired by the popular 2048 game available at this link.
 
-Hints:
-- You have class `field-cell--%cell_value%`, for styling cell in the game.
-- Use `hidden` class for hiding elements on page.
-- Use `start`, `restart` classes for the main button for different styles.
-- Use `field-cell--%cell_value%` class like additional class, don't replace the main class.
-- Use `keydown` event and `event.key` property to handle arrow buttons presses
-    ```js
-    document.addEventListener('keydown', event => console.log(event.key));
-    ```
-- Adding animation to the game is optional. It is a bit tricky, but you can try it if you want. Probably, you will need to extend the Game class with additional methods and create a separate board storage with Tile entities to operate their corresponding DOM elements' positions.
+4. **Any additional launch instructions:**
 
-You can change the HTML/CSS layout if you need it.
+To run this project locally, follow these steps:
+
+    1. Clone the repository:
+      git clone https://github.com/wasik07/js_2048_game.git
+    2. Navigate to the project directory:
+      cd nothing_landing_page
+    3. Install the dependencies:
+      npm install
+    4. Start the development server:
+      npm start
+    5. Open your browser and go to:
+      [http://localhost:3000](http://localhost:3000) to view and interact with the 2048 game.
+
+This will launch the 2048 game on your local development server, allowing you to explore and test the project's features.
 
 ![Preview](./src/images/reference.png)
-
-## Deploy and Pull Request
-
-1. Replace `<your_account>` with your Github username in the link
-    - [DEMO LINK](https://<your_account>.github.io/js_2048_game/)
-2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
-    - Run `npm run test` command to test your code;
-    - Run `npm run test:only -- -n` to run fast test ignoring linter;
-    - Run `npm run test:only -- -l` to run fast test with additional info in console ignoring linter.
-
