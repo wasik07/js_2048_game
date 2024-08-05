@@ -28,7 +28,7 @@
   1. Clone the repository:
     git clone https://github.com/wasik07/js_2048_game.git
   2. Navigate to the project directory:
-    cd nothing_landing_page
+    cd js_2048_game
   3. Install the dependencies:
     npm install
   4. Start the development server:
